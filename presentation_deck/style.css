@@ -394,3 +394,31 @@ h1, h2, h3, h4 {
     min-width: 50px;
     text-align: center;
 }
+
+@media print {
+    @page {
+        size: landscape;
+        margin: 0;
+    }
+    body {
+        background-color: #121212 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .deck {
+        height: auto;
+    }
+    .slide {
+        position: relative !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        page-break-after: always !important;
+        height: 100vh !important;
+        width: 100vw !important;
+        padding: 5rem !important;
+        display: flex !important;
+    }
+    .controls {
+        display: none !important;
+    }
+}
