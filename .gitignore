@@ -1,0 +1,11 @@
+# Ignore massive datasets
+raw json/
+*.parquet
+
+# Ignore python caches
+__pycache__/
+*.pyc
+
+# Ignore output artifacts
+output_visuals/
+*.pdf
