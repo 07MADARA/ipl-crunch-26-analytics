@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Crunch '26 Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="deck">
+        <!-- SLIDE 1: Title Slide -->
+        <section class="slide active" id="slide-1">
+            <div class="content title-slide">
+                <div class="title-container">
+                    <h2 class="sub-headline">Winning with Data, Not Just Opinions</h2>
+                    <h1 class="main-headline">Beyond the Eye Test:<br>Engineering Truth in the IPL</h1>
+                </div>
+                <div class="stat-callout">
+                    <span class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>
+                    </span>
+                    Analyzed 1,200+ matches & 290,000+ deliveries.
+                </div>
+                <!-- Abstract glowing grid background handled in CSS -->
+                <div class="bg-grid"></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: Methodology -->
+        <section class="slide" id="slide-2">
+            <div class="content method-slide">
+                <h1 class="slide-title">The Analytics Engine</h1>
+                
+                <div class="flowchart">
+                    <div class="step">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </div>
+                        <h3>1. Raw JSON Ingestion</h3>
+                        <p>1,200+ official Cricsheet files</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3>2. Automated Python Pipeline</h3>
+                        <p>Zero human error</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        </div>
+                        <h3>3. Parquet Architecture</h3>
+                        <p>Optimized 290k+ row dataset</p>
+                    </div>
+                </div>
+
+                <div class="highlight-boxes">
+                    <div class="h-box">
+                        <h4>Match Phase Impact</h4>
+                        <p>Granular tracking of Powerplay, Middle, and Death overs.</p>
+                    </div>
+                    <div class="h-box">
+                        <h4>Dot Ball Pressure Index</h4>
+                        <p>A proprietary rolling calculation of consecutive dot balls faced.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Phase & Pressure Dynamics -->
+        <section class="slide" id="slide-3">
+            <div class="content split-slide">
+                <div class="left-panel">
+                    <h1 class="slide-title">Where the Game is Won</h1>
+                    <ul class="styled-list">
+                        <li>
+                            <span class="list-icon"></span>
+                            Not all runs are created equal.
+                        </li>
+                        <li>
+                            <span class="list-icon"></span>
+                            Evaluated run differentials across the Powerplay (0-5), Middle (6-14), and Death (15-19) overs.
+                        </li>
+                        <li>
+                            <span class="list-icon"></span>
+                            Mapped phase-specific performance directly against the final margin of victory.
+                        </li>
+                        <li>
+                            <span class="list-icon"></span>
+                            Visualized the true correlation between phase dominance and match outcome.
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-panel">
+                    <div class="image-frame">
+                        <img src="assets/phase_impact_margin.png" alt="Phase Impact Chart">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: The Surprise Insight -->
+        <section class="slide" id="slide-4">
+            <div class="content trap-slide">
+                <h1 class="slide-title">The Dubai Trap</h1>
+                
+                <div class="trap-comparison">
+                    <div class="trap-stat">
+                        <div class="stat-number global-stat">53.8%</div>
+                        <div class="stat-label">Global Chasing Win Rate</div>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="trap-stat anomaly">
+                        <div class="stat-number dubai-stat">40.7%</div>
+                        <div class="stat-label">Dubai Chasing Win Rate</div>
+                    </div>
+                </div>
+                
+                <div class="trap-content">
+                    <p class="trap-warning">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                        Captains following the default T20 chasing meta in Dubai are statistically handicapping their own teams.
+                    </p>
+                    <div class="image-frame">
+                        <img src="assets/toss_impact_by_venue.png" alt="Toss Impact by Venue">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Conclusion -->
+        <section class="slide" id="slide-5">
+            <div class="content closing-slide">
+                <h1 class="slide-title center">Data Wins Tournaments</h1>
+                
+                <div class="check-list">
+                    <div class="check-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Intuition gets you to the IPL; Analytics wins you the trophy.</span>
+                    </div>
+                    <div class="check-item">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Our pipeline turns raw unstructured data into a competitive edge.</span>
+                    </div>
+                </div>
+                
+                <div class="cta-box">
+                    Exploiting anomalies yields immediate win-probability gains. It's time to integrate this into real-time auction strategy.
+                </div>
+            </div>
+        </section>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="prevBtn" disabled>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <span class="slide-counter"><span id="current-slide">1</span> / 5</span>
+            <button id="nextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
